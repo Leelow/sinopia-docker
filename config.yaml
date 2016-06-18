@@ -9,11 +9,12 @@ web:
   # template: custom.hbs
 
 auth:
-  htpasswd:
-    file: ./storage/htpasswd
-    # Maximum amount of users allowed to register, defaults to "+inf".
-    # You can set this to -1 to disable registration.
-    #max_users: 1000
+  mongodb:
+    host: 10.8.0.1
+    port: 27017
+    login: ""
+    password: ""
+    database: "uapp-server"
 
 # a list of other known repositories we can talk to
 uplinks:
@@ -50,7 +51,7 @@ packages:
 
   '@*/*':
     # scoped packages
-    allow_access: $all
+    allow_access: $authenticated
     allow_publish: $authenticated
 
   '*':
@@ -59,7 +60,7 @@ packages:
     #
     # you can specify usernames/groupnames (depending on your auth plugin)
     # and three keywords: "$all", "$anonymous", "$authenticated"
-    allow_access: $all
+    allow_access: $authenticated
 
     # allow all known users to publish packages
     # (anyone can register by default, remember?)
