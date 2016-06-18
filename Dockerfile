@@ -4,9 +4,9 @@ FROM node:slim
 MAINTAINER Leelow <leo@loza.ch>
 
 # Sinopia Version / Path / Backup
-apt-get update
-apt-get install -y git
-RUN git clone --depth 1 https://github.com/Leelow/sinopia.git &&  \
+RUN apt-get update && \
+apt-get install -y git && \
+git clone --depth 1 https://github.com/Leelow/sinopia.git &&  \
 cd sinopia && \
 npm install --production && \
 npm cache clean
