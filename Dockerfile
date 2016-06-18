@@ -11,7 +11,7 @@ cd sinopia && \
 npm install --production && \
 npm cache clean
 
-ADD /config.yaml /sinopa/config.yaml
+ADD /config.yaml /sinopia/config.yaml
 
 WORKDIR /sinopia
 VOLUME /sinopia
