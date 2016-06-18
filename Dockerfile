@@ -1,5 +1,5 @@
 # Pull base image.
-FROM rnbwd/node-io:0.10.44
+FROM node
 
 MAINTAINER Leelow <leo@loza.ch>
 
