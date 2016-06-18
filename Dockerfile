@@ -12,7 +12,7 @@ npm cache clean
 ADD /config.yaml /sinopa/config.yaml
 
 WORKDIR /sinopia
-VOLUME /sinopia/storage
+VOLUME /sinopia
 
 EXPOSE 4873
 
