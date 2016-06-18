@@ -1,5 +1,5 @@
 # Pull base image.
-FROM node
+FROM node:slim
 
 MAINTAINER Leelow <leo@loza.ch>
 
