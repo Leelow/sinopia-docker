@@ -14,7 +14,7 @@ auth:
     port: 27017
     login: ""
     password: ""
-    database: "uapp-sinopia"
+    database: "uapp"
 
 # a list of other known repositories we can talk to
 uplinks:
