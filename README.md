@@ -31,8 +31,3 @@ cd sinopia-docker
 docker build -t sinopia .
 docker run -d -p 4873:4873 sinopia
 ```
-
-
-## Links
-
-* [rnbwd/nginx](https://registry.hub.docker.com/u/rnbwd/nginx/)
