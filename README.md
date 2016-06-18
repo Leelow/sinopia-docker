@@ -26,8 +26,10 @@ This repo uses [leelow/sinopia](https://github.com/leelow/sinopia) and [leelow/s
 - From github repository
 
 ```
-git clone https://github.com/RnbWd/sinopia-docker.git
+git clone https://github.com/leelow/sinopia-docker.git
 cd sinopia-docker
 docker build -t sinopia .
 docker run -d -p 4873:4873 sinopia
 ```
+
+Thanks to [@RnbWd](https://github.com/RnbWd) and [@rlidwka](https://github.com/rlidwka).
